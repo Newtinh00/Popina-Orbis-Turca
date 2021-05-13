@@ -1,0 +1,174 @@
+/*Cardápio*/
+
+.view-menu-imagem {
+    background: url(../img/menu.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 66px;
+    min-height: 600px;
+}
+
+.garrafais {
+    color: #fff;
+    font-size: 6.6rem;
+    text-align: center;
+    font-family: Times New Roman;
+}
+
+.garrafais-2 {
+    color: #fff;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: -150px;
+    font-family: Times New Roman;
+}
+
+.comidas {
+    background-image: #fff;
+    margin: 100px auto;
+    max-width: 1100px;
+}
+
+.comidas nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav .itens {
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+nav .itens .item {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #DC9E4B;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+nav .itens .active,
+nav .itens .item:hover {
+    color: #DC9E4B;
+    background: #4f100e;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.galeria .image {
+    width: calc(100%/4);
+}
+
+.galeria .image.hide {
+    display: none;
+}
+
+.galeria .image.show {
+    display: block;
+}
+
+
+.galeria .image span {
+    width: 100%;
+    overflow: hidden;
+}
+
+figcaption {
+    color: #DC9E4B;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.galeria .image img {
+    width: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.galeria .image:hover img {
+    transform: scale(1.1);
+}
+
+.preview{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0 5px 5px 5px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+.preview .detalhes{
+    display: flex;
+    padding: 13px 15px 13px 10px;
+    justify-content: space-between;
+}
+
+.preview .detalhes .titulo-preview{
+    display: flex;
+    font-weight: 400;
+}
+
+.detalhes .titulo-preview p{
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+@media(max-width:1000px) {
+    .galeria .image {
+        width: calc(100%/3);
+    }
+
+}
+
+@media(max-width:800px) {
+    .galeria .image {
+        width: calc(100%/2);
+    }
+
+}
+
+@media(max-width:700px) {
+    nav .itens {
+        max-width: 600px;
+    }
+
+    nav .itens .item {
+        padding: 7px 15px;
+    }
+
+}
+
+@media(max-width:600px) {
+    nav .itens {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .itens .item {
+        margin: 5px;
+    }
+
+    .galeria .image {
+        width: calc(100%/1);
+    }
+
+
+}

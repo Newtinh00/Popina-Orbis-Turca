@@ -34,7 +34,7 @@ p {
     border-top: 5px solid #DC9E4B;
     box-shadow: 3px 2px 5px #ccc;
     height: 66px;
-    z-index: 999;
+    z-index: 2;
 
 }
 

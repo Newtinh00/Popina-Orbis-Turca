@@ -1,78 +1,123 @@
 @media(max-width:1200px) {
 
-  .about{
-  grid-template-columns: repeat(2,1fr);
-  }
- .prato-direito{
-  display: none;
-}
+    .about {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-.rodape-logo img {
-  width: 80%;
-  margin-right: 0rem;
-}
+    .prato-direito {
+        display: none;
+    }
+
+    .rodape-logo img {
+        width: 80%;
+        margin-right: 0rem;
+    }
 
 }
 
 
 @media(max-width:1000px) {
-  .culinaria img {
-      width: 90%;
-  }
+    .culinaria img {
+        width: 90%;
+    }
 
-  .qrcode {
-    display: block;
-    padding: 4.5rem;
+    .qrcode {
+        display: block;
+        padding: 4.5rem;
+    }
+
+    .qrcode-imagem {
+        width: 95%;
+        height: 600px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .icones-qrcode {
+        display: none;
+    }
+
+    .info-qrcode h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .info-qrcode p {
+        margin-bottom: 20px;
+    }
+
+    .caixa-a p {
+        font-size: 15px;
+    }
+
+    .culinaria {
+        grid-gap: 10px;
+        padding: 4rem;
+    }
+
+
+    .caixa-a a {
+        font-size: 25px;
+        border-radius: 40px;
+        left: 72%;
+        width: 250px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin-top: 20px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .menu ul {
+        margin-right: 20px;
+    }
+
+    .menu ul li {
+        font-size: 22px;
+    }
+
 }
 
-  .qrcode-imagem {
-    width: 95%;
-    height: 600px;
-    border-radius: 10px;
-    margin: 0 auto;
+
+@media(max-width: 800px) {
+    .rodape-logo img {
+        width: 100%;
+    }
+
+    .culinaria img {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .caixa-a p {
+        font-size: 15px;
+
+    }
+
+    .rodape .redes-sociais li {
+        width: 35px;
+    }
 }
 
-.icones-qrcode{
-  display: none;
-}
-.info-qrcode h1{
-  text-align: center;
-  font-size: 3rem;
-}
+@media screen and (max-width: 600px)  {
 
-.info-qrcode p{
-margin-bottom: 20px;
-}
+    .about {
+        display: block;
+    }
 
-.caixa-a p {
-    font-size: 20px;
-}
+    .prato-direito {
+        display: block;
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
+    }
 
-.culinaria {
-    grid-gap: 10px;
-    padding: 4rem;
-}
+    .prato-esquerdo {
+        display: none;
+    }
 
 
-.caixa-a a {
-    font-size: 25px;
-    border-radius: 40px;
-    left: 72%;
-    width: 250px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    margin-top: 20px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-}
-
-.menu ul {
-margin-right: 20px;
-}
-
-.menu ul li {
-  font-size: 22px;
-}
-
-}
+    .info-about {
+        padding: 2rem 2rem 6rem 2rem;
+    }

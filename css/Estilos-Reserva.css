@@ -1,0 +1,9 @@
+/*view*/
+.view-imagem {
+    background: url(../img/4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 66px;
+    min-height: 600px;
+}

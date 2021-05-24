@@ -56,6 +56,10 @@ p {
     text-decoration: none;
 }
 
+.menu ul li:hover a {
+  font-weight: 800;
+}
+
 
 .logo {
     position: absolute;
@@ -65,6 +69,24 @@ p {
 
 .logo svg {
     width: 130px;
+}
+
+
+/*View*/
+.garrafais {
+    color: #fff;
+    font-size: 6.6rem;
+    text-align: center;
+    font-family: Times New Roman;
+}
+
+.garrafais-2 {
+    color: #fff;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: -150px;
+    font-family: Times New Roman;
 }
 
 

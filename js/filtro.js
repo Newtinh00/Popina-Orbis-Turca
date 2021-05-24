@@ -32,6 +32,7 @@ const previewBox = document.querySelector(".preview"),
 previewImg = previewBox.querySelector("img"),
 categoryName = previewBox.querySelector(".titulo-preview p"),
 closeIcon = previewBox.querySelector(".fechar"),
+closeModal = previewBox.querySelector(".modal"),
 modal = document.querySelector(".modal"),
 ingredientes = previewBox.querySelector(".ingredientes-descricao p");
 

@@ -25,17 +25,34 @@ p {
 }
 
 
+label[for="botaoMenu"] {
+    padding: 0px;
+    color: #DC9E4B;
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    top: 7px;
+    display: none;
+    z-index: 4;
+    
+}
+
+#botaoMenu {
+    display: none;
+}
+
 /*menu*/
 .menu {
     background-color: #fff;
     width: 100%;
     top: 0px;
-    position: absolute;
+    position: ;
     border-top: 5px solid #DC9E4B;
     box-shadow: 3px 2px 5px #ccc;
     height: 66px;
     z-index: 2;
-
+    position: absolute;
 }
 
 .menu ul {
@@ -57,13 +74,15 @@ p {
 }
 
 .menu ul li:hover a {
-  font-weight: 800;
+    font-weight: 800;
 }
 
 
 .logo {
     position: absolute;
-    margin-left: 60px;
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 160px;
 }
 
 
@@ -172,7 +191,7 @@ p {
 }
 
 .culinaria img {
-    width: 60%;
+    width: 300px;
 
 }
 
@@ -292,14 +311,14 @@ p {
 
 .qrcode h1 {
     text-align: left;
-    font-size: 35px;
+    font-size: 30px;
     margin-left: 20px;
     margin-bottom: -30px;
 }
 
 .qrcode p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .icones-qrcode ul {
@@ -355,18 +374,16 @@ p {
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
-    margin-bottom: 40px;
+    margin-bottom: -25px;
 }
 
 .rodape-logo {
-    justify-items: right;
+    margin: 0 auto;
 }
 
 .rodape-logo img {
-    width: 50%;
-    float: right;
-    margin-right: 8rem;
-    margin-top: 25px;
+    width: 350px;
+    margin-top: 40px;
 }
 
 .rodape-a ul {
@@ -414,8 +431,6 @@ p {
     width: 20px;
 }
 
-.rodape .redes-sociais li a {}
-
 .rodape .redes-sociais li:hover {
     background-color: #1f0909;
 }
@@ -425,5 +440,31 @@ p {
 }
 
 
+@media(max-width:800px) {
+
+    label[for="botaoMenu"] {
+        display: block;
+    }
+
+    #botaoMenu:checked ~ .menu ul {
+        left: 0;
+    }
+
+    .menu ul {
+        display: block;
+        text-align: center;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 40px;
+        text-align: center;
+        border-top: 1px solid #DC9E4B;
+        transition: all .2s;
+        left: -120%;
+    }
+    .menu{
+        position: fixed;
+    }
 
 
+}

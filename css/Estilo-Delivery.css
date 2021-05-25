@@ -29,47 +29,124 @@ img {
     margin-bottom: -30px;
 }
 
-.delivery img{
-    width: 60%;
+.delivery {
+    align-items: center;
 }
 
-.delivery h1{
-    color: rgb(255,255,255);
+.delivery .imagem img {
+    width: 340px;
+    margin-top: 40px;
+
+}
+
+.delivery h1 {
+    color: rgb(255, 255, 255);
     font-size: 33px;
     text-align: left;
     font-weight: 800;
 }
 
-.delivery p{
+.delivery p {
     text-align: justify;
-    color: rgb(241, 245,223);
+    color: rgb(241, 245, 223);
     margin-left: -15px;
     font-size: 18px;
     margin-top: -25px;
 }
 
-.delivery span p{
+.delivery span p {
     color: #4f100e;
     font-weight: 600;
     font-size: 22px;
 }
 
 
-.delivery ul{
+.delivery ul {
     list-style: none;
     display: flex;
 }
 
-.delivery ul li:hover{
+.delivery ul li:hover {
     margin-top: -10px;
 }
 
-.delivery ul img{
-  width: 100%;
+.delivery ul img {
+    width: 100%;
     margin-left: -40px;
 }
 
 /*parceiros*/
-.parceiros{
-    background: rgb(233,34,39);
+.parceiros {
+    background: rgb(233, 34, 39);
+}
+
+@media(max-width: 1000px) {
+
+    .delivery {
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .delivery {
+        padding: 4rem 2rem 4rem 3rem;
+    }
+
+    .delivery .imagem img {
+        width: 280px;
+        margin-top: 40px;
+    }
+
+    .delivery p {
+        font-size: 16px;
+    }
+
+    .delivery h1 {
+        font-size: 20px;
+    }
+
+    .delivery span p {
+        color: #4f100e;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+}
+
+@media(max-width: 700px) {
+
+    .delivery {
+        display: block;
+        padding: 1rem;
+        padding-bottom: 50px;
+    }
+
+    .delivery .imagem img {
+        width: 250px;
+        margin: auto;
+    }
+
+    .delivery p {
+        font-size: 16px;
+    }
+
+    .delivery h1 {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .delivery span p {
+        text-align: center;
+    }
+
+    .delivery ul {
+        width: 350px;
+        margin: auto;
+    }
+
+    .delivery ul li {
+        width: 200px;
+    }
+
 }

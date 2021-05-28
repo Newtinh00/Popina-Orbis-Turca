@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 /*view*/
 .view-imagem {
     background: url(../img/4.jpg);
@@ -50,6 +54,16 @@
 
 }
 
+.corona_div h1{
+    margin-bottom: 0px;
+}
+
+.corona_div h1 span{
+    font-style: italic;
+    color: #4f100e;
+    font-weight: 600;
+}
+
 @media(max-width: 1000px) {
     .reserva {
         padding: 4rem 2rem 4rem 1rem;
@@ -94,6 +108,10 @@
 }
 
 @media(max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .reserva {
         display: block;
         padding: 2rem;
@@ -113,7 +131,7 @@
         text-align: justify;
     }
 
-    .reserva a{
+    .reserva a {
         position: relative;
         margin-top: 80px;
     }

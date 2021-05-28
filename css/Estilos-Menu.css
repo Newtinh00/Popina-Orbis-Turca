@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 /*Cardápio*/
 
 .comidas {
@@ -9,7 +13,7 @@
 .comidas nav {
     display: flex;
     justify-content: center;
-    
+
 }
 
 /*View*/
@@ -79,10 +83,10 @@ nav .itens .item:hover {
 .galeria .image img {
     width: 100%;
     vertical-align: middle;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-.galeria .image h1{
+.galeria .image h1 {
     font-size: 18px;
     margin-top: 0px;
     padding: 10px;
@@ -98,13 +102,15 @@ nav .itens .item:hover {
 .galeria .image:hover img {
     transform: scale(1.1);
 }
-.galeria p{
+
+.galeria p {
     display: none;
 }
 
-.galeria p.show{
+.galeria p.show {
     display: block;
 }
+
 .preview {
     position: fixed;
     top: 50%;
@@ -132,7 +138,7 @@ nav .itens .item:hover {
 .preview .detalhes .titulo-preview {
     display: flex;
     font-weight: 400;
-   
+
 }
 
 .detalhes .titulo-preview p {
@@ -154,7 +160,7 @@ nav .itens .item:hover {
     border-radius: 0 0 3px 3px;
 }
 
-.fechar{
+.fechar {
     color: #4f100e;
     font-size: 25px;
     font-weight: 600;
@@ -162,7 +168,7 @@ nav .itens .item:hover {
     color: #DC9E4B;
 }
 
-.fechar:hover{
+.fechar:hover {
     color: #fff;
 
 }
@@ -178,9 +184,10 @@ nav .itens .item:hover {
     display: none;
 }
 
-.modal.show{
+.modal.show {
     display: block;
 }
+
 .preview.show {
     opacity: 1;
     pointer-events: auto;
@@ -188,8 +195,8 @@ nav .itens .item:hover {
 
 }
 
-.ingredientes-descricao{
-      color: #DC9E4B;
+.ingredientes-descricao {
+    color: #DC9E4B;
 }
 
 @media(max-width:1000px) {
@@ -213,6 +220,10 @@ nav .itens .item:hover {
 
     nav .itens .item {
         padding: 7px 15px;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
 }

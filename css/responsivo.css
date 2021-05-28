@@ -107,6 +107,9 @@
 }
 
 @media(max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
 
     /*Home*/
 
@@ -209,6 +212,29 @@
     }
 
 
+    .texto-view {
+        padding-top: 6rem;
+    }
+
+    .garrafais {
+        color: #fff;
+        font-size: 3rem;
+        text-align: center;
+        font-family: Times New Roman;
+    }
+
+    .garrafais-2 {
+        color: #fff;
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: 400;
+        margin-top: -90px;
+        font-family: Times New Roman;
+    }
+
 }
 
-/* @media screen and (max-width: 700px)  {} */
+
+}
+
+
